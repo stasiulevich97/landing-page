@@ -1,0 +1,195 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin btn {
+  border: none;
+  border-radius: 8px;
+  color: $secondary-text-color;
+  width: 8rem;
+  height: 2.5rem;
+  cursor:pointer;
+  margin: $margin-md;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+#app{
+  background-color: $bg-color;
+  
+}
+
+a {
+ text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+.header{
+  @include flex;
+  height: 6rem;
+  
+}
+
+.logo_wrapper{
+  @include flex;
+  margin: $margin-md;
+}
+
+.logo{
+  width:$logo-width ;
+  height:$logo-height ;
+}
+
+.logo_text{
+  font-size: $logo-font-size;
+  font-weight: 900;
+}
+
+.nav_items{
+  @include flex;
+}
+
+
+.nav_link{
+  color: $main-text-color;
+  padding: 0 $padding-lg;
+  font-size: $main-font-size;
+  
+}
+
+
+.red{
+  color:$home-text-color;
+  text-decoration: underline;
+
+}
+
+.main__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $margin-lg;
+}
+
+.main__img{
+  width:$img-width ;
+  height:$img-height ;
+  background-blend-mode: darken;
+  mix-blend-mode: multiply;
+}
+
+.text__wrapper{
+  width: 30rem;
+
+}
+.title{
+  font-size: $secondary-font-size;
+  font-weight: 900;
+  color: $main-text-color;
+
+}
+
+.info{
+  font-size: $main-font-size;
+  color: $main-text-color;
+  padding: $padding-sm 0;
+
+}
+
+.btns__wrapper{
+  display: flex;
+  justify-content:center;
+  margin-bottom: $margin-md;
+  
+}
+
+.first__btn{
+  background-color: $first-btn-color;
+  @include btn;
+
+}
+
+.second__btn{
+  background-color: $second-btn-color;
+  @include btn;
+
+}
+
+.sidebar{
+  position: absolute;
+  left:95%;
+  top:40%;
+ 
+}
+
+.icon__wrapper{
+  width: 3rem;
+  height: 3rem;
+  background-color: $icons-bg-color;
+  border-radius: 50%;
+  margin: $margin-sm 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fa-twitter{
+  font-size: $logo-font-size;
+  color: darkcyan;
+}
+
+.fa-facebook{
+  font-size: $logo-font-size;
+  color: blue;
+}
+
+.fa-instagram{
+  font-size: $logo-font-size;
+  color: crimson;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: $padding-lg;
+
+}
+
+.footer__text{
+  margin: $margin-sm;
+  color: $main-text-color;
+}
+
+.link__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 $margin-lg;
+}
+
+.footer__link{
+  color: $main-text-color;
+}
+
+
+
+
+
+
